@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>pagina formulario</title>
+    </head>
+    <body>
+        <form name="formulario" method="post" action=""> <!-- nome do form, métdodo de post e action é uma ação q é realizada -->
+            <h3>Formulário de Contato: </h3> 
+            nome: <br>
+            <input type="text" name="nome" id="nome" size="50" value="digite seu nome..."> <br> <!-- declara uma variável do tipo input de texto -->
+            senha: <br>
+            <input type="password" name="senha" id="senha" size="50" maxlength="8"> <br> <!-- tipo de input para senhas -->
+            curso: <br>
+            <input type="checkbox" name="curso1" id="senha1" value="I">Informática <!-- checkboxes -->
+            <input type="checkbox" name="curso1" id="senha1" value="D">Design
+            <input type="checkbox" name="curso1" id="senha1" value="M">Mecatrônica <br>
+            curso: <br>
+            <input type="radio" name="curso2" id="senha2" value="I">Informática <!-- checkbox com somente uma opção -->
+            <input type="radio" name="curso2" id="senha2" value="D">Design
+            <input type="radio" name="curso2" id="senha2" value="M">Mecatrônica <br>
+            data: <br>
+            <input type="date" name="data" id="data"> <br> <!-- tipo de input para data -->
+            hora: <br>
+            <input type="time" name="hora" id="hora"> <br> <!-- tipo de input para hora do dia -->
+            telefone: <br>
+            <input type="number" name="telefone" id="telefone"> <br> <!-- tipo de input para número de telefone -->
+            estado: <br>
+            <select name="estado" id="estado"> <!-- função de selecao -->
+                <option value="nada">...</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select> <br>
+            sugestoes: <br>
+            <textarea name="sugestao" id="sugestao" rows="10" cols="60"></textarea> <br> <!-- Caixa de texto -->
+            <input type="submit" name="enviar" id="enviar" value="SUBMIT"> <!-- tipo de input para submeter as informações da caixa de texto-->
+            <input type="reset" name="limpar" id="limpar" value="LIMPAR"> <!-- tipo de input para apagar as informações da caixa de texto -->
+            <br><br>
+            <h3>Exemplo de form com tabela: </h3>
+            <table boder=1>
+                <td>Nome:</td>
+                <td><input width=50 type="text" name="nome_table" id="nome_table"></td>
+                <tr></tr>
+                <td>Email:</td>
+                <td><input width=50 type="text" name="email_table" id="email_table"></td>
+            </table>
+        </form>
+    </body>
+</html>
