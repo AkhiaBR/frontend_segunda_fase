@@ -1,0 +1,15 @@
+body { /* configura o corpo da pagina html */
+    background-color: #E0FFFF;
+}
+
+#topo .texto { /* configura a div com o id topo e classe texto do codigo html (tem que ter um espaco entre topo e texto para que o codigo nao pense que voce esta chamando a classe do texto e nao uma classe contida dentro do texto */
+    font-family: arial;
+    text-align: center;
+    font-size: 40px;
+}
+
+#topo .retangulo {
+    background-color: #032B44;
+    height: 15px;
+    border: none;
+}
