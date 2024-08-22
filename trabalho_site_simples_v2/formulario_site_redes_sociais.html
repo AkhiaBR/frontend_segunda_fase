@@ -25,6 +25,10 @@
                 <br>
                 <input type="text" name="endereco" id="endereco" size="50">
                 <br>
+                <font face="arial" size="3" color="2f4f4f">Bairro</font>
+                <br>
+                <input type="text" name="bairro" id="bairro" size="50">
+                <br>
                 <font face="arial" size="3" color="2f4f4f">Cidade</font>
                 <br>
                 <input type="text" name="cidade" id="cidade" size="50">
@@ -32,21 +36,91 @@
                 <font face="arial" size="3" color="2f4f4f">CEP</font>
                 <br>
                 <input type="text" name="cep" id="cep" size="50">
-                <br>
+                <br><br>
+                <font face="arial" size="3" color="2f4f4f">Estado</font> <br>
+                <select name="state" id="state">
+                    <option value="vazio">...</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="pr">Paraná</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                </select><br>
+                <font face="arial" size="3" color="2f4f4f">País</font> <br>
+                <select name="country">
+                    <option value="vazio">...</option>
+                    <option value="ar">Argentina</option>
+                    <option value="br">Brasil</option>
+                    <option value="pr">Paraguai</opton>
+                    <option value="ur">Uruguai</option>
+                    <option value="pe">Peru</option>
+                </select>
+                <br><br>
                 <font face="arial" size="3" color="2f4f4f">E-mail</font>
                 <br>
                 <input type="text" name="email" id="email" size="50">
                 <br>
-                <font face="arial" size="3" color="2f4f4f">Endereço</font>
+                <font face="arial" size="3" color="2f4f4f">CPF</font>
                 <br>
-                <input type="text" name="endereco" id="endereco" size="50">
+                <input type="text" name="cpf" id="cpf" size="50">
+                <br><br>
+                <font face="arial" size="3" color="2f4f4f">Telefone Residencial</font>
+                <br>
+                <input type="number" name="telefone_residencial" id="telefone_residencial" size="50">
                 <br>
                 <font face="arial" size="3" color="2f4f4f">Telefone</font>
                 <br>
                 <input type="number" name="telefone" id="telefone" size="50">
                 <br>
-            </h2> <br>
+            </h2>
+            <h2 align="center">
+                <font face="arial" size="3" color="2f4f4f">Sexo</font> <br>
+                <input type="radio" name="sexo1" id="sexo1"> <font face="arial" size="3" color="2f4f4f">Masculino</font>
+                <input type="radio" name="sexo1" id="sexo1"> <font face="arial" size="3" color="2f4f4f">Feminino</font>
+                <input type="radio" name="sexo1" id="sexo1"> <font face="arial" size="3" color="2f4f4f">Outro</font><br><br>
+                <font face="arial" size="3" color="2f4f4f">Estado Civil</font> <br>
+                <input type="radio" name="estado1" id="estado1"> <font face="arial" size="3" color="2f4f4f">Solteiro</font>
+                <input type="radio" name="estado1" id="estado1"> <font face="arial" size="3" color="2f4f4f">Casado</font>
+                <input type="radio" name="estado1" id="estado1"> <font face="arial" size="3" color="2f4f4f">Separado</font><br><br>
+                <font face="arial" size="3" color="2f4f4f">Data de Nascimento</font> <br>
+                <input type="date" name="data" id="data"><br><br>
+                <hr size="2" width="15%" color="B0E0E6">
+            </h2><br>
+            <h2 align="center">
+                <font face="arial" size="5" color="2F4F4F"><b>ESCOLARIDADE</b></font><br>
+            </h2>
             <hr size="2" width="35%" color="B0E0E6">
+            <h2 align="center">
+                <font face="arial" size="3" color="2f4f4f">Nível de Educação</font> <br>
+                <input type="checkbox" name="educacao"> <font face="arial" size="3" color="2f4f4f">Ensino Fundamental</font>
+                <input type="checkbox" name="educacao"> <font face="arial" size="3" color="2f4f4f">Ensino Técnico</font>
+                <input type="checkbox" name="educacao"> <font face="arial" size="3" color="2f4f4f">Faculdade/Universidade</font><br><br>
+                <font face="arial" size="3" color="2f4f4f">Curso Escolhido</font><br>
+                <select>
+                    <option value="nada">...</option>
+                    <option value="solda">Solda</option>
+                    <option value="english">Inglês Básico</option>
+                    <option value="automacao_industrial">Automação Industrial</option>
+                    <option value="libras">Libras</option>
+                    <option value="oratoria">Oratória e Atendimento</option>
+                </select><br><br>
+                <font face="arial" size="3" color="2f4f4f">Período</font><br>
+                <input type="radio" name="periodo"><font face="arial" size="3" color="2f4f4f">Matutino</font>
+                <input type="radio" name="periodo"><font face="arial" size="3" color="2f4f4f">Vespertino</font>
+                <input type="radio" name="periodo"><font face="arial" size="3" color="2f4f4f">Noturno</font>
+                <br>
+            </h2><br>
+            <hr size="2" width="15%" color="B0E0E6"><br>
+            <h2 align="center">
+                <font face="arial" size="5" color="2F4F4F"><b>FEEDBACK</b></font><br>
+            </h2>
+            <hr size="2" width="35%" color="B0E0E6">
+            <h2 align="center">
+                <font face="arial" size="3" color="2f4f4f">Comente qual foi sua experiência durante a matrícula</font> <br>
+                <textarea name="sugestao" id="sugestao" rows="10" cols="60"></textarea> <br>
+                <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+                <input type="reset" name="limpar" id="limpar" value="LIMPAR">
+            </h2>
         </form>
     </body>
 </html>
