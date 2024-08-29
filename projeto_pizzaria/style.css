@@ -1,0 +1,31 @@
+/* definicoes globais */
+
+body {
+    background-color: brown;
+    margin: 0; /* tira a margem total das bordas da página */
+}
+
+/* definicoes do topo */
+
+.header {
+    background-color: black;
+    text-align: center;
+}
+
+.options {
+    font-family: arial;
+    font-style: oblique;
+}
+
+.options li {
+    display: inline-block; /* coloca os itens lado a lado */
+}
+
+.logo {
+    margin-right: 1600px;
+}
+
+.logo img{
+    width: 200px;
+    height: 150px;
+}
