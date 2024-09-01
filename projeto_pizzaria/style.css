@@ -1,31 +1,40 @@
 /* definicoes globais */
 
+* {
+    margin: 0%; /* tira a margem total das bordas da página */
+    padding: 0%;
+    box-sizing: 0%;
+    font-family: "ARIAL"; /* declara a fonte padrao da página inteira */
+    border: none;
+}
+
 body {
     background-color: brown;
-    margin: 0; /* tira a margem total das bordas da página */
 }
 
 /* definicoes do topo */
 
 .header {
     background-color: black;
-    text-align: center;
+    display: flex; /* deixa todos os elementos do header em linha */
+    padding: 1%; /* expande a parte preta pra fora */
 }
 
-.options {
-    font-family: arial;
-    font-style: oblique;
+.header img {
+    width: 130px;
+    height: 100px;
 }
 
-.options li {
-    display: inline-block; /* coloca os itens lado a lado */
+.navbar ul {
+    display: flex; /* deixa os items da lista em linha */
+    gap: 2rem; /* espaçamento das palavras */
+    margin-top: 12%;
+    margin-left: 250%;
 }
 
-.logo {
-    margin-right: 1600px;
-}
-
-.logo img{
-    width: 200px;
-    height: 150px;
+.navbar a { /* modifica o texto da navbar */
+    color: brown;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
 }
