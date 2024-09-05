@@ -28,8 +28,8 @@ body {
 .navbar ul {
     display: flex; /* deixa os items da lista em linha */
     gap: 2rem; /* espaçamento das palavras */
-    margin-top: 12%;
-    margin-left: 250%;
+    margin-top: 2vw;
+    margin-left: 70vw;
 }
 
 .navbar a { /* modifica o texto da navbar */
@@ -37,4 +37,41 @@ body {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-size: 5vh;
+}
+
+.window {
+    margin-top: 4vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.window_pizza {
+    color: aliceblue;
+
+}
+
+.rodape {
+    font-style: italic;
+    text-align: center;
+    font-size: smaller;
+    color: aliceblue;
+    background-color: black;
+    padding-bottom: 10vh;
+}
+
+.divisor_rodape {
+    background-color: black;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 2px;
 }
