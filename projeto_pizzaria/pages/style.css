@@ -55,6 +55,12 @@ body {
     display: flex;
 }
 
+.sub_destaques {
+    font-size: 3vh;
+    text-align: center;
+    margin-top: 15vh;
+}
+
 .window_pizza {
     border-radius: 5vh;
     color: aliceblue;
@@ -75,12 +81,7 @@ body {
     font-size: smaller;
     color: aliceblue;
     background-color: black;
-    padding-bottom: 10vh;
-}
-
-.divisor_rodape {
-    background-color: black;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    height: 2px;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
