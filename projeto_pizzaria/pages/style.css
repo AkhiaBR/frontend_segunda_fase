@@ -56,9 +56,17 @@ body {
 }
 
 .window_pizza {
+    border-radius: 5vh;
     color: aliceblue;
     background-color: black;
+    padding: 2vh;
     margin: 2vh;
+    text-align: center;
+}
+
+.window_pizza img {
+    height: 100px;
+    width: 150px;
 }
 
 .rodape {
