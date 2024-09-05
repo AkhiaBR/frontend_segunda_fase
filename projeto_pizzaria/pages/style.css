@@ -47,17 +47,18 @@ body {
     font-size: 5vh;
 }
 
-.window {
+.window_container {
     margin-top: 4vh;
     margin-left: 20vh;
     margin-right: 20vh;
-    background-color: black;
     border-radius: 10px;
+    display: flex;
 }
 
 .window_pizza {
     color: aliceblue;
-
+    background-color: black;
+    margin: 2vh;
 }
 
 .rodape {
