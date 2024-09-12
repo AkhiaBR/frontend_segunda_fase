@@ -1,87 +1,127 @@
-/* definicoes globais */
+/* definições globais */
 
 * {
-    margin: 0%; /* tira a margem total das bordas da página */
-    padding: 0%;
-    box-sizing: 0%;
-    font-family: "ARIAL"; /* declara a fonte padrao da página inteira */
-    border: none;
-}
-
-body {
+    box-sizing: border-box; /* ajusta o tamanho dos elementos incluindo margin e padding */
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial;
+    color: #333;
     background-color: brown;
-}
-
-/* definicoes do topo */
-
-.header {
-    background-color: black;
-    display: flex; /* deixa todos os elementos do header em linha */
-    padding: 1%; /* expande a parte preta pra fora */
-}
-
-.header img {
-    width: 130px;
-    height: 100px;
-}
-
-.navbar ul {
-    display: flex; /* deixa os items da lista em linha */
-    gap: 2rem; /* espaçamento das palavras */
-    margin-top: 2vw;
-    margin-left: 70vw;
-}
-
-.navbar a { /* modifica o texto da navbar */
-    color: brown;
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.titulo {
-    text-align: center;
-    margin-top: 5vh;
-    margin-left: 30vh;
-    margin-right: 30vh;
-    font-size: 5vh;
-}
-
-.window_container {
-    margin-top: 4vh;
-    margin-left: 20vh;
-    margin-right: 20vh;
-    border-radius: 10px;
+  }
+  
+  /* definições header */
+  
+  .header {
+    background-color: #000000;
+    padding: 1rem; /* maior espaçamento adaptativo (rem) da área preta do header */
+    display: flex; /* organiza os elementos em linha  */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header img {
+    width: 120px;
+    height: 90px;
+    margin: 0.5px;
+  }
+  
+  .navbar {
+    margin-top: 0.5%;
+    margin-right: 3%;
     display: flex;
-}
-
-.sub_destaques {
-    font-size: 3vh;
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .navbar a {
+    color: brown;
+    text-decoration: none;
+  }
+  
+  /* definições título */
+  
+  .titulo {
     text-align: center;
-    margin-top: 15vh;
-}
-
-.window_pizza {
-    border-radius: 5vh;
-    color: aliceblue;
-    background-color: black;
-    padding: 2vh;
-    margin: 2vh;
+    margin-top: 2rem;
+  }
+  
+  .titulo h1 {
+    font-size: 36px;
+    color: #000000;
+  }
+  
+  /* definições subtítulo */
+  
+  .sub_destaques {
     text-align: center;
-}
-
-.window_pizza img {
-    height: 100px;
-    width: 150px;
-}
-
-.rodape {
-    font-style: italic;
+    margin-top: 5rem;
+  }
+  
+  .sub_destaques h2 {
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  /* definições container pizzas */
+  
+  .window_container {
+    display: flex;
+    flex-wrap: wrap; /* ajusta a opacidade de cada box, fazendo com que uma vá para baixo se não houver tamanho suficiente para colocá-la ao lado de outra box */
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .window_pizza {
+    width: 25%;
+    margin: 20px; /* adiciona espaço entre as boxes */
+    background-color: #000000;
+    padding: 20px; /* espaço paraque o texto e imagem dentro box não fiquem grudados */
+    border: 2px solid #7c7c7c;
+  }
+  
+  .window_pizza img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+  }
+  
+  .window_pizza h3 {
+    font-size: 18px;
+    color: brown;
+  }
+  
+  .window_pizza p {
+    font-size: 14px;
+    color: rgb(129, 33, 33);
+    margin-top: 10px;
+  }
+  
+  /* definições rodapé */
+  
+  .rodape {
+    background-color: #000000;
+    padding: 2rem;
     text-align: center;
-    font-size: smaller;
-    color: aliceblue;
-    background-color: black;
-    margin-top: 5vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
+  }
+  
+  .rodape h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .rodape h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .rodape p {
+    font-size: 14px;
+  }
