@@ -84,6 +84,7 @@
     background-color: #000000;
     padding: 20px; /* espaço paraque o texto e imagem dentro box não fiquem grudados */
     border: 2px solid #7c7c7c;
+    text-align: center;
   }
   
   .window_pizza img {
@@ -101,6 +102,20 @@
     font-size: 14px;
     color: rgb(129, 33, 33);
     margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .window_pizza a {
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    background-color: rgb(120, 233, 133);
+    margin-top: 30px;
   }
   
   /* definições rodapé */
