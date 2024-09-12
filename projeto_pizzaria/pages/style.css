@@ -21,11 +21,17 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .header img {
     width: 120px;
     height: 90px;
     margin: 0.5px;
+  }
+
+  .header h1 {
+    color: brown;
+    float: left;
+    margin-right: 960px;
   }
   
   .navbar {
@@ -118,6 +124,13 @@
     margin-top: 30px;
   }
 
+  .container_forms {
+    display: flex;
+    margin: 0;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
   .form_container {
     max-width: 600px;
     padding: 20px;
@@ -126,6 +139,92 @@
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 20rem;
+  }
+
+  .select_box {
+    margin-bottom: 1rem;
+  }
+
+  .select_box select {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .select_box h3 {
+    color: brown;
+  }
+
+  .form_container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .input_box {
+    margin-bottom: 20px;
+  }
+  
+  .input_box h3 {
+    font-weight: bold;
+    color: brown;
+  }
+  
+  .input_box input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .input_box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .input_box_checkbox input {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .input_box_checkbox h3 {
+    font-weight: bold;
+    color: brown;
+  }
+  
+  .textarea_box input {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    margin-top: 1rem;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .textarea_box h3 {
+    font-weight: bold;
+    color: brown;
+  }
+
+  .form_container_2 {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 20rem;
+  }
+
+  .form_container_2 h2 {
+    margin-bottom: 1rem;
   }
   
   .input_box {

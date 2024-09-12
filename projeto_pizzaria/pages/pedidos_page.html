@@ -9,6 +9,8 @@
 
             <img src="../images/freddy_pizzeria.png"> <!-- (../) para nao dar erro de imagem nao disponível -->
 
+            <h1>FREDDY'S PIZZARIA</h1>
+
             <nav class="navbar">
                 <ul> <!-- cria uma lista que nao ordena (1, 2, 3...) -->
                     <li><a href="../pages/home_page.html">HOME</a></li> <!-- list item, simplemente um caracter na lista, o href="#" faz a pagina subir -->
@@ -23,47 +25,149 @@
             <h1>PREENCHA OS DADOS NECESSÁRIOS PARA REALIZAR O PEDIDO</h1>
         </div>
 
-        <div class="form_container">
-            <form>
+        <div class="container_forms">
 
-                <div class="input_box">
-                    <h3>Nome</h3>
-                    <input type="text" size="50" placeholder="Digite seu nome...">
-                </div>
+            <div class="form_container">
+                <form>
+    
+                    <h2>INFORMAÇÕES DO CLIENTE</h2>
+    
+                    <div class="input_box">
+                        <h3>Nome</h3>
+                        <input type="text" size="50" placeholder="Digite seu nome...">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>Email</h3>
+                        <input type="text" size="50" placeholder="Digite seu email...">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>Número do Telefone Residencial</h3>
+                        <input type="text" size="50" placeholder="Digite o número do seu telefone residencial...">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>Número do Telefone Celular</h3>
+                        <input type="text" size="50" placeholder="Digite o número do seu telefone pessoal...">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>CPF</h3>
+                        <input type="number" size="50" placeholder="Digite o seu CPF...">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>RG</h3>
+                        <input type="number" size="50" placeholder="Digite o seu RG...">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>Cidade</h3>
+                        <input type="text" size="50" placeholder="Digite o nome da sua cidade">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>CEP</h3>
+                        <input type="text" size="50" placeholder="Digite o seu CEP...">
+                    </div>
+    
+                    <div class="select_box">
+                        <h3>Estado</h3>
+                        <select>
+                            <option value="nda">...</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="PR">Paraná</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </select>
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>Bairro</h3>
+                        <input type="text" size="50" placeholder="Digite seu bairro...">
+                    </div>
+    
+                    <div class="input_box">
+                        <h3>Número da casa</h3>
+                        <input type="text" size="50" placeholder="Digite o número da casa...">
+                    </div>
+    
+                    <div class="textarea_box">
+                        <h3>Informações Adicionais</h3>
+                        <textarea rows="10" cols="60"></textarea><br>
+                        <input type="submit">
+                        <input type="reset"> 
+                    </div>
+    
+                </form>
+            </div>
+    
+            <div class="form_container_2">
+                <form>
+    
+                    <h2>INFORMAÇÕES DE ENTREGA</h2>
+    
+                    <div class="input_box">
+                        <h3>Data de Entrega</h3>
+                        <input type="date" size="50" placeholder="Selecione a data de entrega...">
+                    </div>
+                
+                    <div class="select_box">
+                        <h3>Tipo de Pizza</h3>
+                        <select>
+                            <option value="nda">...</option>
+                            <option value="SB">Sem Borda</option>
+                            <option value="CB">Com Borda</option>
+                        </select>
+                    </div>
 
-                <div class="input_box">
-                    <h3>Número de Telefone</h3>
-                    <input type="number" size="50" placeholder="Digite o número da casa...">
-                </div>
+                    <div class="select_box">
+                        <h3>Tamanho da Pizza</h3>
+                        <select>
+                            <option value="nda">...</option>
+                            <option value="G">Grande</option>
+                            <option value="M">Média</option>
+                            <option value="P">Pequena</option>
+                        </select>
+                    </div>
 
-                <div class="input_box">
-                    <h3>Email</h3>
-                    <input type="email" size="50" placeholder="Digite seu email...">
-                </div>
+                    <div class="input_box_checkbox">
+                        <h3>Sabor da Pizza</h3>
+                        <input type="checkbox" id="calabresa" size="50">CALABRESA<br>
+                        <input type="checkbox" id="pepperoni" size="50">PEPPERONI<br>
+                        <input type="checkbox" id="frango_caipira" size="50">FRANGO CAIPIRA<br>
+                        <input type="checkbox" id="4_queijos" size="50">QUATRO QUEIJOS<br>
+                        <input type="checkbox" id="lombo_defumado" size="50">LOMBO DEFUMADO<br>
+                        <input type="checkbox" id="presunto" size="50">PRESUNTO<br>
+                        <input type="checkbox" id="alho_poro" size="50">ALHO PORÓ<br>
+                        <input type="checkbox" id="cebola_alho" size="50">CEBOLA E ALHO<br>
+                        <input type="checkbox" id="portuguesa" size="50">PORTUGUESA<br><br>
+                    </div>
 
-                <div class="input_box">
-                    <h3>CEP</h3>
-                    <input type="number" size="50" placeholder="Digite o seu CEP...">
-                </div>
+                    <div class="select_box">
+                        <h3>Tipo da Borda</h3>
+                        <select>
+                            <option value="nda">...</option>
+                            <option value="DC">Doce</option>
+                            <option value="SG">Salgada</option>
+                        </select>
+                    </div>
 
-                <div class="input_box">
-                    <h3>Bairro</h3>
-                    <input type="text" size="50" placeholder="Digite seu bairro...">
-                </div>
+                    <div class="select_box">
+                        <h3>Sabor da Borda</h3>
+                        <select>
+                            <option value="nda">...</option>
+                            <option value="CH">CHOCOLATE</option>
+                            <option value="CT">CATUPIRY</option>
+                            <option value="CH">CHEDDAR</option>
+                        </select>
+                    </div>
+    
+                </form>
+            </div>
 
-                <div class="input_box">
-                    <h3>Número da casa</h3>
-                    <input type="text" size="50" placeholder="Digite o número da casa...">
-                </div>
-
-                <div class="textarea_box">
-                    <h3>Informações Adicionais</h3>
-                    <textarea rows="10" cols="60"></textarea><br>
-                    <input type="submit">
-                    <input type="reset"> 
-                </div>
-
-            </form>
         </div>
 
         <div class="rodape">
