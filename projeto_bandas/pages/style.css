@@ -33,3 +33,43 @@ body {
     font-weight: bolder;
     color: black;
 }
+
+.container_mid {
+    display: flex;
+    margin: 4rem;
+    padding: 1rem;
+}
+
+.imagem_members img {
+    border-radius: 0.5rem;
+    height: 630px; /* 40rem */
+    width: 1100px; /* 70rem */
+}
+
+.texto_mid {
+    margin: 2rem;
+    display: flexbox;
+}
+
+.texto_mid h2 {
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.texto_mid p {
+    margin: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer {
+    background-color: whitesmoke;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer p {
+    color: rgb(95, 95, 95);
+}
