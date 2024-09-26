@@ -71,5 +71,16 @@ body {
 }
 
 .footer p {
+    padding: 1rem;
     color: rgb(95, 95, 95);
+}
+
+.divider {
+    height: 2rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    color: whitesmoke;
+    filter: brightness(80%);
 }
