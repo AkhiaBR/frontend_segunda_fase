@@ -21,6 +21,10 @@ body {
     width: 330px;
 }
 
+.header img:hover {
+    transform: scale(1.1);
+}
+
 .navbar ul {
     display: flex;
     gap: 2rem;
@@ -32,6 +36,10 @@ body {
     text-decoration: none;
     font-weight: bolder;
     color: black;
+}
+
+.navbar a:hover {
+    color: rgb(212, 24, 24);
 }
 
 .container_mid {
@@ -137,4 +145,47 @@ body {
     margin-bottom: 2rem;
     border-radius: 0.5rem;
     border: 0.2rem solid rgb(255, 255, 255);
+}
+
+.container_hist img:hover {
+    transform: scale(1.2);
+}
+
+.subtitulo img {
+    width: 1360px;
+    height: 768px;
+    border-radius: 0.5cap;
+    margin-top: 1.5rem;
+}
+
+.container_int {
+    display: fle;
+    flex-direction: column;
+    align-items: center;
+}
+
+.integrante {
+    display: flex;
+    margin: 8rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    background-color: rgb(19, 19, 19);
+    padding: 0.5rem;
+    border-radius: 0.2cap;
+}
+
+.integrante_texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.integrante_texto h2,p {
+    margin: 2rem;
+    color: whitesmoke;
+}
+
+.integrante img {
+    width: 250px;
+    height: 250px;
+    border: 0.2rem solid rgb(199, 55, 55);
 }
