@@ -47,7 +47,7 @@ body {
 }
 
 .texto_mid {
-    margin: 2rem;
+    margin: 3rem;
     display: flexbox;
 }
 
@@ -83,4 +83,58 @@ body {
     margin-right: 20rem;
     color: whitesmoke;
     filter: brightness(80%);
+}
+
+.subtitulo {
+    text-align: center;
+    margin: 6rem;
+}
+
+.subtitulo h2 {
+    color: whitesmoke;
+    margin-bottom: 1.5rem;
+}
+
+.subtitulo p {
+    color: whitesmoke;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.hist_left, .hist_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_hist {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+}
+
+.container_hist h2 {
+    margin-bottom: -1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.container_hist p {
+    text-align: center;
+    color: whitesmoke;
+    margin: 2rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.container_hist img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid rgb(255, 255, 255);
 }
