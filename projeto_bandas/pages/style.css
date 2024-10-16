@@ -48,6 +48,16 @@ body {
     padding: 1rem;
 }
 
+.container_mid_2 {
+    text-align: center;
+    margin: 4rem;
+}
+
+.container_mid_2 h2 {
+    color: whitesmoke;
+    margin: 2rem;
+}
+
 .imagem_members img {
     border-radius: 0.5rem;
     height: 630px; /* 40rem */
@@ -271,4 +281,17 @@ body {
 .fotos_container img:hover {
     transform: scale(1.2);
     transition: transform 0.3s; /* transição suave */
+}
+
+.agenda {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.agenda h2 {
+    margin: 2rem;
+    font-style: italic;
+    font-family: monospace;
+    color: brown;
+    filter: brightness(80%);
 }
