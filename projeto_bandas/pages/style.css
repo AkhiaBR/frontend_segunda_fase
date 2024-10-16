@@ -151,6 +151,10 @@ body {
     transform: scale(1.2);
 }
 
+.subtitulo {
+    margin-bottom: 4rem;
+}
+
 .subtitulo img {
     width: 1360px;
     height: 768px;
@@ -188,4 +192,83 @@ body {
     width: 250px;
     height: 250px;
     border: 0.2rem solid rgb(199, 55, 55);
+}
+
+.up_container img {
+    height: 450px;
+    width: 450px;
+}
+
+.down_container img {
+    height: 450px;
+    width: 450px;
+}
+
+.up_container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 3rem;
+}
+
+.down_container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 3rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+.up_container p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 2rem;
+}
+
+.down_container p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 2rem;
+}
+
+.up_container h2 {
+    margin: 1rem;
+    margin-bottom: -1rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.down_container h2 {
+    margin: 1rem;
+    margin-bottom: -1rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.caixa_album {
+    background-color: rgb(230, 230, 230);
+    border-radius: 1cap;
+    border-style: groove;
+    border-color: brown;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.fotos_container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.fotos_container img {
+    margin: 0.5rem;
+    border-radius: 0.5cap;
+}
+
+.fotos_container img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s; /* transição suave */
 }
