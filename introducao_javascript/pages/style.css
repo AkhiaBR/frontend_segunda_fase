@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    margin: 20rem;
+    margin-left: 40rem;
+    margin-right: 40rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.container h2 {
+    font-family: Verdana;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.container_input {
+    justify-content: center;
+    margin: 0.4rem;
+}
+
+.container p {
+    margin: 0.2rem;
+    font-family: Verdana;
+}
+
+.container_input input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.container_input select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}

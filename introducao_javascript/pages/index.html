@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Página Javascript</title>
+        <link rel="stylesheet" href="../pages/style.css">
+        <script src="../scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>CLIQUE NO BOTÃO!</h2>
+            <form>
+                <div class="container_input">
+                    <p>Nome:</p>
+                    <input type="text" name="first_name" placeholder="Nome">
+                </div>
+                <div class="container_input">
+                    <p>Sobrenome:</p>
+                    <input type="text" name="last_name" placeholder="Sobrenome">
+                </div>
+                <div class="container_input">
+                    <p>Cidade:</p>
+                    <input type="text" name="city" placeholder="Cidade">
+                    <p>Estado:</p>
+                    <select id="estado">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </select>
+                </div>
+                <div class="container_input">
+                    <p>CEP:</p>
+                    <input type="text" name="cep" placeholder="CEP" onkeypress="mask(this,'XXXXX-XXX')" maxlength="9">
+                </div>
+                <div class="container_input">
+                    <p>Telefone Residencial:</p>
+                    <input type="text" name="tel_res" placeholder="Telefone Residencial" onkeypress="mask(this,'XX XXXX-XXXX')" maxlength="12">
+                </div>
+                <div class="container_input">
+                    <p>Telefone Celular:</p>
+                    <input type="text" name="tel_cel" placeholder="Telefone Celular" onkeypress="mask(this,'XX XXXX-XXXX')" maxlength="12">
+                </div>
+                <div class="container_input">
+                    <p>Data de Nascimento:</p>
+                    <input type="text" name="data_nasc" placeholder="Data de Nascimento" onkeypress="mask(this,'XX/XX/XXXX')" maxlength="10">
+                </div>
+                <div class="container_input">
+                    <p>CPF:</p>
+                    <input type="text" name="cpf" placeholder="CPF" onkeypress="mask(this,'XXX.XXX.XXX-XX')" maxlength="14">
+                </div>
+                <div class="container_input">
+                    <p>RG:</p>
+                    <input type="text" name="rg" placeholder="RG" onkeypress="mask(this,'XX.XXX.XXX-X')" maxlength="12">
+                </div>
+                <div class="container_input">
+                        <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
