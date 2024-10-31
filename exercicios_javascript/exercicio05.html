@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Exercicio05</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var nome = prompt("Digite o nome do funcionário: ");
+                var cargo = prompt("Digite o cargo do funcionário: ");
+                var salarioInput = prompt("Digite o salário do funcionário: ");
+
+                var salario = parseFloat(salarioInput);
+
+                var aumento = (salario*0.05)+salario;
+                alert("O funcionário: " + nome + ", cargo: " + cargo + ", tem o salário aumentado para: " + aumento);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Exercicio08</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var nome = prompt("Digite o nome do cliente: ");
+                var totalInput = prompt("Digite o valor total da compra: ");
+                var numInput = prompt("Digite o número de parcelas que deseja pagar: ");
+
+                var total = parseFloat(totalInput);
+                var num = parseInt(numInput);
+
+                var parcela = total/num;
+                alert("O número total de parcelas será igual a: " + parcela);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>

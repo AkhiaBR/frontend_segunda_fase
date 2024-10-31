@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Exercicio07</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var nome = prompt("Digite o nome do indivíduo: ");
+                var idadeInput = prompt("Digite a sua idade: ");
+                var pesoInput = prompt("Digite o peso do indivíduo: ");
+                var alturaInput = prompt("Digite a altura do indivíduo: ");
+
+                var idade = parseInt(idadeInput);
+                var peso = parseFloat(pesoInput);
+                var altura = parseFloat(alturaInput);
+
+                var imc = peso/(altura*altura);
+                alert("O IMC do indivíduo: " + nome + ", é igual a: " + imc);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exercicio04</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var nome = prompt("Digite o seu nome: ");
+                var produto = prompt("Digite o produto: ");
+                var quantidadeInput = prompt("Digite a quantidade desse produto: ");
+                var precoInput = prompt("Digite o preço: ");
+
+                var quantidade = parseInt(quantidadeInput);
+                var preco = parseFloat(precoInput);
+
+                var valor = quantidade*preco;
+                alert("O cliente: " + nome + " pagou: " + valor + " pelo produto: " + produto);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-function mask(t, mask)
+function mask(t, mask) 
 {
     var i = t.value.length;
     var exit = mask.substring(1,0);

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Exercicio03</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var nome = prompt("Digite o seu nome: ");
+                var nota1 = prompt("Digite a sua primeira nota: ");
+                var nota2 = prompt("Digite a sua segunda nota: ");
+                var nota3 = prompt("Digite a sua terceira nota: ");
+
+                var nota1Num = parseFloat(nota1);
+                var nota2Num = parseFloat(nota2);
+                var nota3Num = parseFloat(nota3);
+
+                var media = (nota1Num+nota2Num+nota3Num)/3;
+                alert("A média do aluno " + nome + " é: " + media);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>

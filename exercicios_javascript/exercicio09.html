@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Exercicio09</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var nome = prompt("Digite o nome do funcionário: ");
+                var horaInput = prompt("Digite a carga horária mensal do funcionário: ");
+                var valorInput = prompt("Digite o valor por hora ganho: ");
+
+                var hora = parseInt(horaInput);
+                var valor = parseFloat(valorInput);
+
+                var salario = (hora*valor);
+                alert("O salário do funcionário: " + nome + ", é: " + salario);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>

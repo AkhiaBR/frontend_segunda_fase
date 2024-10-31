@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Exercicio06</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var baseInput = prompt("Digite o valor da base do triângulo: ");
+                var alturaInput = prompt("Digite o valo da altura do triângulo: ");
+
+                var base = parseFloat(baseInput);
+                var altura = parseFloat(alturaInput);
+
+                var area = (base*altura)/2;
+                alert("A área do triângulo é igual a: " + area);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>
