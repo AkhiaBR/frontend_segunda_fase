@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Exercicio10</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var nomeInput = prompt("Digite o nome do cliente: ");
+                var vendasInput = prompt("Digite o valor total de suas vendas esse mês: ");
+
+                var vendas = parseFloat(vendasInput);
+                var resultado = 3000+(vendas*0.03);
+
+                alert("O salário total do funcionário é igual a: " + resultado);
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>

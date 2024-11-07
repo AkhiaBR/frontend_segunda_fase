@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Exercicio13</title>
+    </head>
+    <body>
+        <script>
+            function inserirValor() {
+                var anoNascInput = prompt("Digite a data de nascimento da pessoa: ");
+
+                var anoNasc = parseInt(anoNascInput);
+
+                if(2024-anoNasc > 18) {
+                    alert("Você deverá votar obrigatoriamente esse ano.")
+                }
+                else if(2024-anoNasc >= 16 && 2024-anoNasc <= 18) {
+                    alert("Você tem a opção de votar ou não nesse ano.")
+                }
+                else if(2024-anoNasc < 16) {
+                    alert("Você ainda não tem a idade mínima para votar esse ano.")
+                }
+            }
+        </script>
+        <button onclick="inserirValor()">CLIQUE AQUI</button>
+    </body>
+</html>
