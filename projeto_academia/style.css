@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box; /* ajusta o tamanho dos elementos incluindo margin e padding */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Courier New';
+}
+
+.header {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.header h2, h1 {
+    margin: 2rem;
+    color: black;
+}
+
+.mid_container {
+    padding: 1.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.mid_container h1, h2, p {
+    color: aliceblue;
+    text-align: center;
+    margin: 2rem;
+}
+
+.slide_show {
+    position: relative;
+}
+
+.slide_show img {
+    height: 800px;
+    width: 100%;
+}
+
+.slide_show h1 {
+    color: aliceblue;
+    position: absolute;
+}
+
+.slide_show img {
+    filter: brightness(60%);
+}
+
+.footer {
+    background-color: yellow;
+    text-align: center;
+    padding: 1.5rem;
+}
