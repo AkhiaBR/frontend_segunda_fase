@@ -173,22 +173,27 @@ body {
 }
 
 .input_box input[type="radio"] {
-    transform: scale(1.5);
+    transform: scale(2);
     margin: 0;
     margin-left: 3rem;
     margin-right: -0.5rem;
 }
 
-.input[type="checkbox"] {
-    transform: scale(1.5);
+.input_box input[type="checkbox"] {
+    transform: scale(2);
     margin: 0;
-    margin-right: -20rem;
     margin-left: 3rem;
+    margin-right: -0.5rem;
+}
+
+.input_box input[type="time"] {
+    width: 200px;
 }
 
 .input_box p {
     margin: 0;
     color: black;
+    padding: 1rem;
 }
 
 .form_button {
