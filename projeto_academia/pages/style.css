@@ -53,6 +53,33 @@ body {
     transition: transform 0.3s; /* transição suave */
 }
 
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* exclui as outras imagens que não estão sendo mostradas ainda */
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s;
+}
+
+.slide h1 {
+    color: rgb(214, 201, 21);
+    position: absolute;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity;
+}
+
+.slide img {
+    width: 100%;
+    height: 45rem;
+    filter: brightness(60%);
+}
+
 .mid_container {
     padding: 1.5rem;
     margin-left: 20rem;
@@ -79,52 +106,6 @@ body {
     filter: brightness(80%);
 }
 
-.slide_show {
-    position: relative;
-    width: 100%;
-    max-width: 600px;  /* Ajuste o tamanho conforme necessário */
-    margin: 0 auto;
-    overflow: hidden;  /* Esconde as imagens fora da área visível */
-}
-
-slide_show img {
-    height: 800px;
-    width: 100%;
-}
-
-.slide_show h1 {
-    color: aliceblue;
-    position: absolute;
-}
-
-.slide_show img {
-    filter: brightness(60%);
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 100%; /* Começa fora da tela à direita */
-    width: 100%;
-    height: 100%;
-    opacity: 0; /* Começa invisível */
-    transition: all 1s ease; /* Transição suave */
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
-.slide_first {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1; /* A primeira imagem começa visível */
-}
-
 .mid_inscricao h2 {
     margin-top: 2rem;
     margin-left: 8rem;
@@ -148,6 +129,87 @@ slide_show img {
     background-color: rgb(255, 255, 255);
     transform: scale(1.05);
     transition: transform 1s; /* transição suave */
+}
+
+.input_dados {
+    background-color: rgb(214, 201, 21);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.input_box h3 {
+    color: black;
+    text-align: right; /* alinhamento o texto para ficar do lado das caixas de input */
+}
+
+.input_box input, .input_box select {
+    width: 100%; /* ajusta o tamanho das caixas de input para se adaptarem */
+    padding: 0.5rem;
+    border: 2px solid #757575;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    transition: border-color 0.3s ease;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.input_box input:focus, .input_box select:focus {
+    border-color: rgb(0, 0, 0); /* cor de foco */
+    outline: none;
+}
+
+.input_box select {
+    max-width: 250px; /* limite para o tamanho do select */
+}
+
+.input_box input[type="radio"] {
+    transform: scale(1.5);
+    margin: 0;
+    margin-left: 3rem;
+    margin-right: -0.5rem;
+}
+
+.input[type="checkbox"] {
+    transform: scale(1.5);
+    margin: 0;
+    margin-right: -20rem;
+    margin-left: 3rem;
+}
+
+.input_box p {
+    margin: 0;
+    color: black;
+}
+
+.form_button {
+    margin: 1rem;
+}
+
+.form_button button {
+    border: 2px solid #000000;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    color: rgb(214, 201, 21);
+    background-color: black;
+}
+
+.form_button button:hover {
+    border: 2px solid #808080;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    color: rgb(214, 201, 21);
+    background-color: black;
+    cursor: pointer; /* muda o cursor para selecionar o botão */
 }
 
 .footer {

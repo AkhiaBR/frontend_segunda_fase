@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Homepage</title> 
+        <link rel="stylesheet" href="style.css">
+        <script> // script colocado na head de inscricao para que só seja executado quando for necessário, ou seja, quando um valor for inserido no input 
+            function mask(t, mask) // funcao de estilar o input de valores dos formulários (mask)
+            {
+                var i = t.value.length;
+                var exit = mask.substring(1,0);
+                var text = mask.substring(i)
+
+                if (text.substring(0,1) != exit)
+                {
+                    t.value += text.substring(0,1);
+                }
+            }
+
+            function clearForm() 
+            {
+                const inputs = document.querySelectorAll('.input_box input, .input_box select'); // seleciona todas as formas de input do formulário
+
+                for (let i = 0; i < inputs.length; i++) { // para cada input recebido:
+                    const input = inputs[i];  // acessa o input da lista
+
+                    if (input.type !== 'button') { 
+                        input.value = '';  // Limpa o valor do input
+                        input.checked = false; // Desmarca o input (para checkboxes, radios)
+                    }
+                }
+            }   
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <a href="home_page.html"><h1>ACADEMIA SON GOKU</h1></a>
+            <a href="inscricao_page.html"><h2>FAÇA A SUA INSCRIÇÃO</h2></a>
+        </div>
+        <div class="mid_container">
+            <form class="form">
+                <div class="dados_container">
+                    <h2>PREENCHA SEUS DADOS PESSOAIS</h2>
+                    <div class="input_dados">
+                        <div class="input_box">
+                            <h3>Nome: </h3>
+                            <input type="text" size="50" placeholder="Digite o seu nome">
+                        </div>
+                        <div class="input_box">
+                            <h3>Endereço: </h3>
+                            <input type="text" size="50" placeholder="Digite o seu endereço">
+                            <h3>Bairro: </h3>
+                            <input type="text" size="50" placeholder="Digite o nome do seu bairro">
+                        </div>
+                        <div class="input_box">
+                            <h3>Cidade: </h3>
+                            <input type="text" size="50" placeholder="Digite o nome da sua cidade">
+                            <h3>Estado: </h3>
+                            <select>
+                                <option value="nda">...</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="PR">Paraná</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                            </select>
+                        </div>
+                        <div class="input_box">
+                            <h3>CEP: </h3>
+                            <input type="text" placeholder="Digite o número do seu CEP" onkeypress="mask(this,'XXXXX-XXX')" maxlength="9">
+                            <h3>País: </h3>
+                            <select>
+                                <option value="nda">...</option>
+                                <option value="BR">Brasil</option>
+                                <option value="PY">Paraguai</option>
+                                <option value="UY">Uruguai</option>
+                                <option value="AR">Argentina</option>
+                                <option value="CL">Chile</option>
+                            </select>
+                        </div>
+                        <div class="input_box">
+                            <h3>Telefone Residencial: </h3>
+                            <input type="text" name="tel_res" placeholder="Telefone Residencial" onkeypress="mask(this,'XX XXXX-XXXX')" maxlength="12">
+                            <h3>Telefone Ceclular: </h3>
+                            <input type="text" name="tel_cel" placeholder="Telefone Celular" onkeypress="mask(this,'XX XXXX-XXXX')" maxlength="12">
+                        </div>
+                        <div class="input_box">
+                            <h3>Sexo: </h3>
+                            <input type="radio" id="sexo_m" name="sexo" value="MA">
+                            <p>Masculino</p>
+                            <input type="radio" id="sexo_f" name="sexo" value="FE">
+                            <p>Feminino</p>
+                            <input type="radio" id="sexo_o" name="sexo" value="OT">
+                            <p>Outro</p>
+                        </div>
+                        <div class="input_box">
+                            <h3>Estado Civil: </h3>
+                            <input type="radio" id="civil_so" name="civil_estado" value="SO">
+                            <p>Solteiro(a)</p>
+                            <input type="radio" id="civil_ca" name="civil_estado" value="CA">
+                            <p>Casado(a)</p>
+                            <input type="radio" id="civil_vi" name="civil_estado" value="VI">
+                            <p>Viúvo(a)</p>
+                            <h3>Data de Nascimento: </h3>
+                            <input type="date" id="data_nasc" value="DN">
+                        </div>
+                    </div>
+                </div>
+                <div class="modalidade_container">
+                    <h2>INFORME COMO SERÁ O SEU TREINO</h2>
+                    <div class="input_dados">
+                        <div class="input_box">
+                            <h3>Modalidade: </h3>
+                            <input type="checkbox" id="sexo_m" value="MU">
+                            <p>Musculação</p>
+                            <input type="checkbox" id="sexo_f" value="DA">
+                            <p>Dança</p>
+                            <input type="checkbox" id="sexo_o" value="MT">
+                            <p>Muay Thai</p>
+                            <input type="checkbox" id="sexo_o" value="YO">
+                            <p>Yoga</p>
+                        </div>
+                        <div class="input_box">
+                            <div class="input_box">
+                                <h3>Dias da Semana: </h3>
+                                <input type="checkbox" id="segunda" value="seg">
+                                <p>Segunda-feira</p>
+                                <input type="checkbox" id="terca" value="ter">
+                                <p>Terça-feira</p>
+                                <input type="checkbox" id="quarta" value="qua">
+                                <p>Quarta-feira</p>
+                                <input type="checkbox" id="quinta" value="qui">
+                                <p>Quinta-feira</p>
+                                <input type="checkbox" id="sexta" value="sex">
+                                <p>Sexta-feira</p>
+                            </div>
+                        </div>
+                        <div class="form_button">
+                            <button type="submit">Enviar</button>
+                            <button type="button" onclick="clearForm()">Limpar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>© 2024 SON GOKU FITNESS. All Rights Reserved. Privacy Policy.<br>
+                Design & Development by Fernando Gonçalves - 2190.
+            </p>
+        </div>
+    </body>
+</html>
