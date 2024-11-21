@@ -18,19 +18,4 @@ function nextSlide() { // funcao de selecionar a próxima imagem
     showSlide(currentIndex + 1);
 }
 
-function clearForm() {
-    const inputs = document.querySelectorAll('.input_box input, .input_box select');
-
-    // Loop através de todos os elementos e limpa o valor
-    inputs.forEach(input => {
-        if (input.type === "checkbox" || input.type === "radio") {
-            input.checked = false;  // Desmarca os checkboxes e radio buttons
-        } else if (input.type === "text" || input.type === "tel" || input.type === "email" || input.type === "number" || input.type === "date") {
-            input.value = '';  // Limpa os campos de texto e outros inputs
-        } else if (input.tagName.toLowerCase() === 'select') {
-            input.selectedIndex = 0;  // Reseta os selects para a opção padrão
-        }
-    });
-}
-
-setInterval(nextSlide, 3000); // altera a imagem a cada 3 segundos
+setInterval(nextSlide, 5000); // altera a imagem a cada 3 segundos
